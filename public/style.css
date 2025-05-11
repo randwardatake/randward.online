@@ -1,0 +1,25 @@
+/* public/style.css */
+body {
+    background-image: url("images/friends.jpg");
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: center;
+}
+
+fieldset img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin: 10px 0;
+}
+
+/* Tab animation */
+[role="tabpanel"] {
+    transition: opacity 0.2s ease;
+}
+
+[role="tabpanel"].hidden {
+    opacity: 0;
+    display: none;
+} 

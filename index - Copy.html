@@ -1,0 +1,99 @@
+<!-- index.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Friends</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet"href="https://unpkg.com/xp.css">
+</head>
+<body>
+    <div class="window main-window">
+    <div class="a title-bar">
+        <div class="title-bar-text">title:friends/</div>
+        <div class="title-bar-controls">
+            <button onclick="toggleTree()" aria-label="Minimize"></button>
+            <button aria-label="Close"></button>
+          </div>
+        </div>
+    <div>
+        <div class="window-body">
+            <ul class="tree-view">
+                <li>
+                  <details open>
+                    <summary>randward</summary>
+                    <ul>
+                      
+                      <li>
+                        <details>
+                          <summary>music</summary>
+                          <ul>
+                            <li><a href="#" onclick="openTopster()">Topster</a></li>
+                          </ul>
+                        </details>
+                      </li>
+                    </ul>
+                  </details>
+                </li>
+
+              </ul>
+            <div class="content-area">
+                <menu role="tablist">
+                  <button aria-selected="true" aria-controls="music" onclick="switchTab(this)">dont</button>
+                  <button aria-selected="false" aria-controls="Ego" onclick="switchTab(this)">Ego</button>
+                  <button aria-selected="false" aria-controls="fun" onclick="switchTab(this)">fun</button>
+                  <button aria-selected="false" aria-controls="of" onclick="switchTab(this)">me</button>
+                </menu>
+                <article role="tabpanel" id="music" aria-labelledby="dont" class="tab-panel">
+                    <p>friends</p>
+                    <fieldset class="fieldset-content">
+                        <legend>Today's mood</legend>
+                        <p>- It's empty here, and it Egos me feel neither good nor bad.</p>
+                          <p>- I'm all alone, but at the same time it feels like I'm not. There are a lot of thoughts in my head, they always keep ne entertained.</p>
+                          <p>- I can create a whole world with them. This place is safe, and nothing bad will happen here. Nothing good will happen either, though.</p>
+                          <p>- You know, this place is so empty... Though, I don't feel particularly good or bad because of it.</p>
+                          <p>- I'm all alone, but at the same time it feels like I'm not. There's a lot of thoughts in my head, they always keep me entertained.</p>
+                          <p>- I can create a whole world with them. I'm sure it'll be able to fill the void around me if I try hard enough!</p>
+                          <p>- No matter how much I think, my surroundings don't change. Yes, things happened in my head, but they never left its premises.</p>
+                          <p>- And it's not like I tried to suppress them... Maybe they were afraid to come out?</p>
+                          <p>- But there should be an end somewhere. You can't wander around forever. What do you think?</p>
+                          <p>- I know it sounds scary, but it's not scarier than constantly existing among the void.</p>
+                          <p>xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx </p>
+                          <p>- This place is always neither warm, nor cold. It's neutral.</p>
+                          <p>-But at the same time, if I think about warmth, I feel warm</p>
+                          <p>- Maybe this world corresponds to my thoughts?</p>
+                          <p>-I wouldn't want to admit that I'm completely empty.</p>
+                          <p>- I'm not the reason everything had disappeared, right?</p>
+                          <p>- Can't I just adapt and get used to having nothing around me since I can't do anything about it?</p>
+                          <p>xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx</p>
+                          <p>- I don't care that this place is empty, you hear?! I feel neither good, nor bad!"</p>
+                          <p>- I'm all alone.                    </p>
+                          <p>- I need to decide, and my thoughts will help me.- My head is full of thoughts, they eclipse the world around me.                    </p>
+                          <p>- They'll lead me to the exit... And I'll be able to feel proud of myself</p>
+                          <p>- This place is empty, but it Egos me feel neither good, nor bad."</p>
+                          <p>- I'm alone, but my head is full of thoughts. A whole world, one might say</p>
+                          <p>-If I try hard enough, it'll be able to fill all the void around me!</p>
+                          <p>- No matter how much I keep thinking, my surroundings don't change. Yes, something happened outside of my head, but..."                    </p>
+                          <p>- I'll be able to save myself                    </p>
+                          <p>- Even if there's nothing around me, I'm still here.</p>
+                    </fieldset>
+                </article>
+                <article role="tabpanel" id="Ego" aria-labelledby="Ego" class="tab-panel" hidden>
+                    <p>hayatim ve hayatima olan sevgim adina yemin ederim ki hicbir zaman bir baska insan icin yasamayacagim ve baska bir insandan benim icin yasamasini istemeyecegim</p>
+                </article>
+                <article role="tabpanel" id="fun" aria-labelledby="fun" class="tab-panel" hidden>
+                    <p>fun content</p>
+                </article>
+                <article role="tabpanel" id="of" aria-labelledby="of" class="tab-panel" hidden>
+                    <p>me content</p>
+                </article>
+                <article role="tabpanel" id="games" aria-labelledby="games" class="tab-panel" hidden>
+                    <p>Games content here</p>
+                </article>
+            </div> 
+        </div>        
+    </div>        
+    <script src="script.js"></script>
+</body>
+</html>

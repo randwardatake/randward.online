@@ -1,0 +1,70 @@
+<!-- index.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Friends</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet"href="https://unpkg.com/xp.css">
+</head>
+<body>
+    <div class="window main-window">
+    <div class="a title-bar">
+        <div class="title-bar-text">title:friends/</div>
+        <div class="title-bar-controls">
+            <button onclick="toggleTree()" aria-label="Minimize"></button>
+            <button aria-label="Close"></button>
+          </div>
+        </div>
+    <div>
+        <div class="window-body">
+            <ul class="tree-view">
+                <li>
+                  <details open>
+                    <summary>randward</summary>
+                    <ul>
+                      
+                      <li>
+                        <details>
+                          <summary>music</summary>
+                          <ul>
+                            <li><a href="#" onclick="openTopster()">Topster</a></li>
+                          </ul>
+                        </details>
+                      </li>
+                    </ul>
+                  </details>
+                </li>
+
+              </ul>
+            <div class="content-area">
+                <menu role="tablist">
+                  <button aria-selected="true" aria-controls="music" onclick="switchTab(this)">dont</button>
+                  <button aria-selected="false" aria-controls="Ego" onclick="switchTab(this)">Ego</button>
+                  <button aria-selected="false" aria-controls="fun" onclick="switchTab(this)">fun</button>
+                  <button aria-selected="false" aria-controls="of" onclick="switchTab(this)">me</button>
+                </menu>
+                <article role="tabpanel" id="music" aria-labelledby="dont" class="tab-panel">
+                    <p>friends</p>
+                    <fieldset class="fieldset-content">
+                        
+                </article>
+                <article role="tabpanel" id="Ego" aria-labelledby="Ego" class="tab-panel" hidden>
+                    <p>hayatim ve hayatima olan sevgim adina yemin ederim ki hicbir zaman bir baska insan icin yasamayacagim ve baska bir insandan benim icin yasamasini istemeyecegim</p>
+                </article>
+                <article role="tabpanel" id="fun" aria-labelledby="fun" class="tab-panel" hidden>
+                    <p>fun content</p>
+                </article>
+                <article role="tabpanel" id="of" aria-labelledby="of" class="tab-panel" hidden>
+                    <p>me content</p>
+                </article>
+                <article role="tabpanel" id="games" aria-labelledby="games" class="tab-panel" hidden>
+                    <p>Games content here</p>
+                </article>
+            </div> 
+        </div>        
+    </div>        
+    <script src="script.js"></script>
+</body>
+</html>
